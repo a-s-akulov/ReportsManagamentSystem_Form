@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E884D60D-1498-4336-AE02-697036097A43}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ReportsManagementSystemForm</RootNamespace>
+    <AssemblyName>ReportsManagementSystemForm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>\\server\BookcentreSoft\ReportsManagementSystemForm\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>ReportsManagementSystem</ProductName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pechkinX256_16.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B5ABD1D9BCF8CD33665282015D6B2300428174BF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ReportsManagementSystemForm_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.Extensions, Version=17.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1_ReportsManagement\InstanceEditor\RemoteHandler\Instance_remote_handler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\InstanceEditor\RemoteHandler\Instance_remote_handler.Designer.cs">
+      <DependentUpon>Instance_remote_handler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\InstanceEditor\RemoteHandler\Instance_remote_handler_prog.cs" />
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\StatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\StatusForm.Designer.cs">
+      <DependentUpon>StatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\OtherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\OtherForm.Designer.cs">
+      <DependentUpon>OtherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\SQLTemplatesPathForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\SQLTemplatesPathForm.Designer.cs">
+      <DependentUpon>SQLTemplatesPathForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\FilesPathForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\FilesPathForm.Designer.cs">
+      <DependentUpon>FilesPathForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\RemarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\RemarkForm.Designer.cs">
+      <DependentUpon>RemarkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\ContentDescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\ContentDescriptionForm.Designer.cs">
+      <DependentUpon>ContentDescriptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\ResponsiblePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\ResponsiblePerson.Designer.cs">
+      <DependentUpon>ResponsiblePerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\ToDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\ToDateForm.Designer.cs">
+      <DependentUpon>ToDateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\FrequencyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\FrequencyForm.Designer.cs">
+      <DependentUpon>FrequencyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\DepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\DepartmentForm.Designer.cs">
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\TypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\TypeForm.Designer.cs">
+      <DependentUpon>TypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\BrandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\BrandForm.Designer.cs">
+      <DependentUpon>BrandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\GroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\GroupForm.Designer.cs">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\NameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\Forms\NameForm.Designer.cs">
+      <DependentUpon>NameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryCreatingMaster\ReportsManagement_registry_creatingMaster.cs" />
+    <Compile Include="AuxiliaryModules\ModuleRichTextInput\ModuleRichTextInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuxiliaryModules\ModuleRichTextInput\ModuleRichTextInput.Designer.cs">
+      <DependentUpon>ModuleRichTextInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuxiliaryModules\ModuleRichTextInput\ModuleRichTextInput1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModuleRichTextInput.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AuxiliaryModules\ModuleRichTextInput\ModuleRichTextInput_prog.cs" />
+    <Compile Include="Constances.cs" />
+    <Compile Include="1_ReportsManagement\InstanceEditor\FilesHandler\Instance_files_handler_prog.cs" />
+    <Compile Include="1_ReportsManagement\InstanceEditor\FilesHandler\Instance_files_handler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\InstanceEditor\FilesHandler\Instance_files_handler.Designer.cs">
+      <DependentUpon>Instance_files_handler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\InstanceEditor\ReportsManagement_instance_editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\InstanceEditor\ReportsManagement_instance_editor.Designer.cs">
+      <DependentUpon>ReportsManagement_instance_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\InstanceEditor\ReportsManagement_instance_editor_prog.cs" />
+    <Compile Include="1_ReportsManagement\RegistryEditor\UsersEditor\Registry_users_editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryEditor\UsersEditor\Registry_users_editor.Designer.cs">
+      <DependentUpon>Registry_users_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryEditor\UsersEditor\Registry_users_editor_prog.cs" />
+    <Compile Include="1_ReportsManagement\RegistryEditor\ReportsManagement_registry_editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryEditor\ReportsManagement_registry_editor.Designer.cs">
+      <DependentUpon>ReportsManagement_registry_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_ReportsManagement\RegistryEditor\ReportsManagement_registry_editor_prog.cs" />
+    <Compile Include="1_ReportsManagement\ReportsManagement_main_instances_prog.cs" />
+    <Compile Include="1_ReportsManagement\ReportsManagement_main_registry_prog.cs" />
+    <Compile Include="1_ReportsManagement\ReportsManagement_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_ReportsManagement\ReportsManagement_main.Designer.cs">
+      <DependentUpon>ReportsManagement_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2_UsersManagement\UsersManagement_editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_UsersManagement\UsersManagement_editor.Designer.cs">
+      <DependentUpon>UsersManagement_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2_UsersManagement\UsersManagement_editor_prog.cs" />
+    <Compile Include="2_UsersManagement\UsersManagement_main_prog.cs" />
+    <Compile Include="3_DirectoryManagement\DirectoryManagement_main_prog.cs" />
+    <Compile Include="3_DirectoryManagement\DirectoryManagement_editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_DirectoryManagement\DirectoryManagement_editor.Designer.cs">
+      <DependentUpon>DirectoryManagement_editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_DirectoryManagement\DirectoryManagement_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_DirectoryManagement\DirectoryManagement_main.Designer.cs">
+      <DependentUpon>DirectoryManagement_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0_MainMenu\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0_MainMenu\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0_MainMenu\MainMenu_prog.cs" />
+    <Compile Include="3_DirectoryManagement\DirectoryManagement_editor_prog.cs" />
+    <Compile Include="AuxiliaryModules\ModuleSQL.cs" />
+    <Compile Include="AuxiliaryModules\ModuleTextInput\ModuleTextInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuxiliaryModules\ModuleTextInput\ModuleTextInput.Designer.cs">
+      <DependentUpon>ModuleTextInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuxiliaryModules\ModuleTextInput\ModuleTextInput_prog.cs" />
+    <Compile Include="AuxiliaryModules\ModuleUserSelect\ModuleUserSelect_prog.cs" />
+    <Compile Include="AuxiliaryModules\ModuleUserSelect\ModuleUserSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuxiliaryModules\ModuleUserSelect\ModuleUserSelect.Designer.cs">
+      <DependentUpon>ModuleUserSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="2_UsersManagement\UsersManagement_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_UsersManagement\UsersManagement_main.Designer.cs">
+      <DependentUpon>UsersManagement_main.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="1_ReportsManagement\InstanceEditor\RemoteHandler\Instance_remote_handler.resx">
+      <DependentUpon>Instance_remote_handler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\InstanceEditor\FilesHandler\Instance_files_handler.resx">
+      <DependentUpon>Instance_files_handler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\InstanceEditor\ReportsManagement_instance_editor.resx">
+      <DependentUpon>ReportsManagement_instance_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\StatusForm.resx">
+      <DependentUpon>StatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\OtherForm.resx">
+      <DependentUpon>OtherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\SQLTemplatesPathForm.resx">
+      <DependentUpon>SQLTemplatesPathForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\FilesPathForm.resx">
+      <DependentUpon>FilesPathForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\RemarkForm.resx">
+      <DependentUpon>RemarkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\ContentDescriptionForm.resx">
+      <DependentUpon>ContentDescriptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\ResponsiblePerson.resx">
+      <DependentUpon>ResponsiblePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\ToDateForm.resx">
+      <DependentUpon>ToDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\FrequencyForm.resx">
+      <DependentUpon>FrequencyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\DepartmentForm.resx">
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\TypeForm.resx">
+      <DependentUpon>TypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\BrandForm.resx">
+      <DependentUpon>BrandForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\GroupForm.resx">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryCreatingMaster\Forms\NameForm.resx">
+      <DependentUpon>NameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryEditor\UsersEditor\Registry_users_editor.resx">
+      <DependentUpon>Registry_users_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\RegistryEditor\ReportsManagement_registry_editor.resx">
+      <DependentUpon>ReportsManagement_registry_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_ReportsManagement\ReportsManagement_main.resx">
+      <DependentUpon>ReportsManagement_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2_UsersManagement\UsersManagement_editor.resx">
+      <DependentUpon>UsersManagement_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2_UsersManagement\UsersManagement_main.resx">
+      <DependentUpon>UsersManagement_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_DirectoryManagement\DirectoryManagement_editor.resx">
+      <DependentUpon>DirectoryManagement_editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_DirectoryManagement\DirectoryManagement_main.resx">
+      <DependentUpon>DirectoryManagement_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0_MainMenu\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuxiliaryModules\ModuleRichTextInput\ModuleRichTextInput.resx">
+      <DependentUpon>ModuleRichTextInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuxiliaryModules\ModuleTextInput\ModuleTextInput.resx">
+      <DependentUpon>ModuleTextInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuxiliaryModules\ModuleUserSelect\ModuleUserSelect.resx">
+      <DependentUpon>ModuleUserSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Content Include="!myFiles\instruction.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ReportsManagementSystemForm_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="!myFiles\reportsManagementSystem_handler_exec.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pechkinX256_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
